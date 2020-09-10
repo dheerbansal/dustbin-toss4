@@ -1,7 +1,7 @@
 class Ground{
     constructor(x,y,width,height){
         var options = {
-            isStatic:true,
+            isStatic:true
             //restitution:2.0
         } 
         this.body = Bodies.rectangle(x,y,width,height,options)
@@ -16,6 +16,7 @@ class Ground{
            push();
            translate(groundPos.x,groundPos.y)
            rectMode(CENTER)
+           fill(0)
            rect(0,0,this.width, this.height);
            pop();          
         }
